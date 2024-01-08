@@ -70,13 +70,7 @@ let useDropdownListbox = (options, ~multiSelect=false, ~highlightFirstOnOpen=fal
   let getDropdownProps = () => {
     role: "combobox",
     tabIndex: 0,
-    onClick: EventHandlers.onDropdownClick(
-      ~menuVisible,
-      ~hideMenu,
-      ~showMenu,
-      ~highlightFirstOnOpen,
-      ~highlightFirst,
-    ),
+    onClick: EventHandlers.onDropdownClick(~menuVisible, ~hideMenu, ~showMenu),
     onBlur: EventHandlers.onBlur(~resetHighlighted, ~menuVisible, ~hideMenu),
     onKeyDown: EventHandlers.onKeyDown(
       ~menuVisible,

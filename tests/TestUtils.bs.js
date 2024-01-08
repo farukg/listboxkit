@@ -41,22 +41,6 @@ var Keyboard = {
   upShift: upShift
 };
 
-function pressKeyboardDown(param) {
-  return DomTestingLibrary__UserEvent.keyboard(undefined, down);
-}
-
-function pressKeyboardUp(param) {
-  return DomTestingLibrary__UserEvent.keyboard(undefined, up);
-}
-
-function pressKeyboardEnter(param) {
-  return DomTestingLibrary__UserEvent.keyboard(undefined, enter);
-}
-
-function pressKeyboardSpace(param) {
-  return DomTestingLibrary__UserEvent.keyboard(undefined, space);
-}
-
 function pressDown(e) {
   return DomTestingLibrary__UserEvent.type_(undefined, e, down);
 }
@@ -111,10 +95,6 @@ function focus(param) {
 
 var FireEvent = {
   Keyboard: Keyboard,
-  pressKeyboardDown: pressKeyboardDown,
-  pressKeyboardUp: pressKeyboardUp,
-  pressKeyboardEnter: pressKeyboardEnter,
-  pressKeyboardSpace: pressKeyboardSpace,
   pressDown: pressDown,
   pressDownShift: pressDownShift,
   pressEnd: pressEnd,

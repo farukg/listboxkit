@@ -25,13 +25,16 @@
     "in-source": true
   },
   "suffix": ".bs.js",
-  "bs-dependencies": ["@rescript/react", "bs-webapi"],
+  "bs-dependencies": [
+    "@rescript/react"
+  ],
   "bs-dev-dependencies": [
     "@drewschrauf/bs-user-event",
     "@glennsl/bs-jest",
     "bs-jest-dom",
     "rescript-dom-testing-library",
-    "rescript-react-testing-library"
+    "rescript-react-testing-library",
+    "rescript-webapi"
   ],
   "warnings": {
     "error": "+101",
